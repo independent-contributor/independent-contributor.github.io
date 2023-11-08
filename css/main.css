@@ -1294,7 +1294,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/bg-pic.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1671,6 +1671,10 @@ header .logo a {
 	position: relative;
 	left: .05rem;
 	top: .2rem;
+}
+
+#resume .timeline-ico img {
+	border-radius: 50%;
 }
 
 #resume .timeline-header {
