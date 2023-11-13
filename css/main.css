@@ -1354,7 +1354,26 @@ header .logo a {
 	letter-spacing: .2rem;
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap; 
+	margin: 0 auto; 
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 5.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
 }
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+  }
+  
 .intro-content .intro-position span {
 	display: inline-block;
 }
@@ -1480,6 +1499,17 @@ header .logo a {
 	.intro-social {
 		font-size: 2.4rem;
 	}
+}
+@media only screen and (max-width:768px) {
+	.intro-content .intro-position {
+		white-space: unset; 
+		margin: unset; 
+
+		overflow: unset; /* Ensures the content is not revealed until the animation */
+		margin: 0 auto; 
+		letter-spacing: unset;
+		animation: unset
+	}	
 }
 
 
